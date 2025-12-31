@@ -1,5 +1,6 @@
 import { produits } from "@/data/produits";
 import ProduitList from "@/app/components/ProduitList";
+import ProduitsSearch from "@/app/components/ProduitsSearch";
 
 export const metadata = {
   title: "Nos Produits - TechStore",
@@ -19,9 +20,9 @@ export default function ProduitsPage() {
         </div>
       </section>
 
-      {/* Produits Section */}
+      {/* Section recherche + produits */}
       <section className="container mx-auto px-4 py-12">
-        <ProduitList produits={produits} />
+        <ProduitsSearch produits={produits} />
       </section>
     </div>
   );
